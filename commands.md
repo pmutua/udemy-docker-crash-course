@@ -16,4 +16,14 @@
 
 `docker rmi $(docker images -q)`
 
-# Commit 
+# Rebuild image 
+
+docker build -t pmutua/debian .
+
+# Start continer 
+
+docker run cbvfvswu57533
+
+# Overide CMD command at run time 
+
+docker run cbvfvswu57533 echo "hello world"
