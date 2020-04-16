@@ -24,6 +24,28 @@ docker build -t pmutua/debian .
 
 docker run cbvfvswu57533
 
-# Overide CMD command at run time 
+# Overide CMD command at run time
 
 docker run cbvfvswu57533 echo "hello world"
+
+# Push Images 
+
+- Step 1 - Find Images 
+
+    `docker images`
+
+- Step 2 - rename tag 
+
+docker tag bc4332323253 jleetutorial /debian:1.01
+
+- Step 3 - Login docker 
+
+ docker login --username=pmutua 
+
+- Step 4 - push container to repository 
+
+docker push jleetutorial/debian:1.01
+
+Note:
+
+- Docker will use the latest as default tag when no tag provided.
